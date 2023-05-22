@@ -1,0 +1,12 @@
+.card {
+  transition: all .25s ease 0s;
+  .card-img-top {
+    transition: all .25s ease 0s;
+  }
+  &:hover {
+    box-shadow: 0px 0px 15px 1px rgba(118, 116, 116, 0.7);
+    .card-img-top {
+      transform: scale(1.05);
+    }
+  }
+}
