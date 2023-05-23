@@ -1,0 +1,17 @@
+.footer {
+  .sitemap-item {
+    color: $white;
+    font-size: $h1-font-size;
+    transition: all .25s ease 0s;
+    @include media-breakpoint-up(lg) {
+      font-size: 5rem;
+      line-height: 1.2;
+    }
+    &:hover {
+      color: $primary!important;
+    }
+  }
+  .footer-logo {
+    width: 255px;
+  }
+}

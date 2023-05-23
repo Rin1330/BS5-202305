@@ -7,63 +7,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Style Page</title>
   <link rel="stylesheet" href="./assets/css/all.css">
+  <script src="./assets/js/all.js"></script>
 </head>
 
 <body class="bg-dark">
   <header>
     <nav class="navbar navbar-expand-lg py-7 py-lg-5">
       <div class="container">
-        <h1 class="mb-0"><a class="navbar-brand lh-0 d-block p-0 m-0" href="#"><img
-              src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/logo.png"
-              class="img-fluid" alt="logo"></a></h1>
+        <h1 class="mb-0"><a class="navbar-brand lh-0 d-block p-0 m-0" href="#"><img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/logo.png" class="img-fluid" alt="logo"></a></h1>
         <button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasRight" aria-controls="#offcanvasRight" aria-expanded="false"
           aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse d-none d-lg-block" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">首頁</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">項目2</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">項目3</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">項目4</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">項目5</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="offcanvas offcanvas-end w-100 d-lg-none bg-dark" tabindex="-1" id="offcanvasRight"
+        <div class="offcanvas offcanvas-end w-100 bg-dark" tabindex="-1" id="offcanvasRight"
           aria-labelledby="offcanvasRightLabel">
           <div class="offcanvas-header">
-            <!-- <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5> -->
             <button type="button" class="btn-close ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
-          <div class="offcanvas-body d-flex align-items-center">
-            <ul class="navbar-nav mx-auto mb-0 text-center">
-              <li class="nav-item display-3 mb-2">
+          <div class="offcanvas-body w-100 d-flex justify-content-center align-items-center">
+            <ul class="nav ms-lg-auto w-100 w-auto d-flex flex-column flex-lg-row text-center">
+              <li class="nav-item mb-2 mb-lg-0 me-lg-5">
                 <a class="nav-link active" aria-current="page" href="#">首頁</a>
               </li>
-              <li class="nav-item display-3 mb-2">
-                <a class="nav-link" href="#">項目2</a>
+              <li class="nav-item mb-2 mb-lg-0 me-lg-5">
+                <a class="nav-link" href="javascript:;">item 2</a>
               </li>
-              <li class="nav-item display-3 mb-2">
-                <a class="nav-link" href="#">項目3</a>
+              <li class="nav-item mb-2 mb-lg-0 me-lg-5">
+                <a class="nav-link" href="javascript:;">item 2</a>
               </li>
-              <li class="nav-item display-3 mb-2">
-                <a class="nav-link" href="#">項目4</a>
+              <li class="nav-item mb-2 mb-lg-0 me-lg-5">
+                <a class="nav-link" href="javascript:;">Twitter</a>
               </li>
-              <li class="nav-item display-3">
-                <a class="nav-link" href="#">項目5</a>
+              <li class="nav-item mb-2 mb-lg-0">
+                <a class="nav-link" href="javascript:;">Instagram</a>
               </li>
             </ul>
           </div>
@@ -101,136 +79,199 @@
       <p class="fw-normal">Normal 400 text.</p>
       <hr>
     </div>
-    <div class="bg-light mb-14">
+    <div class="bg-light mb-14 rounded-4">
       <h3 class="text-center py-5 text-dark">Card</h3>
       <div class="container">
         <section class="py-6">
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g6 mt-n6">
-          <div class="col">
-            <div class="card h-100 overflow-hidden">
-              <div class="overflow-hidden">
-                <img
-                  src="https://images.unsplash.com/photo-1655635643532-fa9ba2648cbe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80"
-                  class="card-img-top object-fit-cover" alt="cardItem" style="height: 312px;">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-6 mt-n6">
+            <div class="col">
+              <div class="card h-100 overflow-hidden">
+                <div class="overflow-hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1655635643532-fa9ba2648cbe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80"
+                    class="card-img-top object-fit-cover" alt="cardItem" style="height: 312px;">
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title h6 fw-bold mb-3">Sentiment Analysis API</h5>
+                    <p class="card-text small">自動識別文本中的情感傾向，包括正向、負向和中性等。適用於情感分析、社交媒體監控、市場調查等。</p>
+                </div>
+                <ul class="list-group list-group-flush border-top">
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span class="fw-semibold">AI 模型</span>
+                    <span>昊昊</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span>#聊天</span>
+                    <a href="javascript:;" class="lh-0 d-block"><span class="material-symbols-outlined">share</span></a>
+                  </li>
+                </ul>
               </div>
-              <div class="card-body">
-                <h3 class="card-title h6 fw-bold mb-3">Sentiment Analysis API</h5>
-                  <p class="card-text small">自動識別文本中的情感傾向，包括正向、負向和中性等。適用於情感分析、社交媒體監控、市場調查等。</p>
+            </div>
+            <div class="col">
+              <div class="card h-100 overflow-hidden">
+                <div class="overflow-hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1655635643532-fa9ba2648cbe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80"
+                    class="card-img-top object-fit-cover" alt="cardItem" style="height: 312px;">
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title h6 fw-bold mb-3">Sentiment Analysis API</h5>
+                    <p class="card-text small">專業的圖像識別平台，識別圖像、分類、標記等。</p>
+                </div>
+                <ul class="list-group list-group-flush border-top">
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span class="fw-semibold">AI 模型</span>
+                    <span>昊昊</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span>#聊天</span>
+                    <a href="javascript:;" class="lh-0 d-block"><span class="material-symbols-outlined">share</span></a>
+                  </li>
+                </ul>
               </div>
-              <ul class="list-group list-group-flush border-top">
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                  <span class="fw-semibold">AI 模型</span>
-                  <span>昊昊</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                  <span>#聊天</span>
-                  <a href="javascript:;" class="lh-0 d-block"><span class="material-symbols-outlined">share</span></a>
-                </li>
-              </ul>
+            </div>
+            <div class="col">
+              <div class="card h-100 overflow-hidden">
+                <div class="overflow-hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1655635643532-fa9ba2648cbe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80"
+                    class="card-img-top object-fit-cover" alt="cardItem" style="height: 312px;">
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title h6 fw-bold mb-3">Sentiment Analysis API</h5>
+                    <p class="card-text small">
+                      自動識別文本中的情感傾向，包括正向、負向和中性等。適用於情感分析、社交媒體監控、市場調查等。自動識別文本中的情感傾向，包括正向、負向和中性等。適用於情感分析、社交媒體監控、市場調查等。自動識別文本中的情感傾向，包括正向、負向和中性等。適用於情感分析、社交媒體監控、市場調查等。
+                    </p>
+                </div>
+                <ul class="list-group list-group-flush border-top">
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span class="fw-semibold">AI 模型</span>
+                    <span>昊昊</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span>#聊天</span>
+                    <a href="javascript:;" class="lh-0 d-block"><span class="material-symbols-outlined">share</span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 overflow-hidden">
+                <div class="overflow-hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1655635643532-fa9ba2648cbe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80"
+                    class="card-img-top object-fit-cover" alt="cardItem" style="height: 312px;">
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title h6 fw-bold mb-3">Sentiment Analysis API</h5>
+                    <p class="card-text small">自動識別文本中的情感傾向，包括正向、負向和中性等。適用於情感分析、社交媒體監控、市場調查等。</p>
+                </div>
+                <ul class="list-group list-group-flush border-top">
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span class="fw-semibold">AI 模型</span>
+                    <span>昊昊</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span>#聊天</span>
+                    <a href="javascript:;" class="lh-0 d-block"><span class="material-symbols-outlined">share</span></a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div class="col">
-            <div class="card h-100 overflow-hidden">
-              <div class="overflow-hidden">
-                <img
-                  src="https://images.unsplash.com/photo-1655635643532-fa9ba2648cbe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80"
-                  class="card-img-top object-fit-cover" alt="cardItem" style="height: 312px;">
-              </div>
-              <div class="card-body">
-                <h3 class="card-title h6 fw-bold mb-3">Sentiment Analysis API</h5>
-                  <p class="card-text small">專業的圖像識別平台，識別圖像、分類、標記等。</p>
-              </div>
-              <ul class="list-group list-group-flush border-top">
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                  <span class="fw-semibold">AI 模型</span>
-                  <span>昊昊</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                  <span>#聊天</span>
-                  <a href="javascript:;" class="lh-0 d-block"><span class="material-symbols-outlined">share</span></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100 overflow-hidden">
-              <div class="overflow-hidden">
-                <img
-                  src="https://images.unsplash.com/photo-1655635643532-fa9ba2648cbe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80"
-                  class="card-img-top object-fit-cover" alt="cardItem" style="height: 312px;">
-              </div>
-              <div class="card-body">
-                <h3 class="card-title h6 fw-bold mb-3">Sentiment Analysis API</h5>
-                  <p class="card-text small">
-                    自動識別文本中的情感傾向，包括正向、負向和中性等。適用於情感分析、社交媒體監控、市場調查等。自動識別文本中的情感傾向，包括正向、負向和中性等。適用於情感分析、社交媒體監控、市場調查等。自動識別文本中的情感傾向，包括正向、負向和中性等。適用於情感分析、社交媒體監控、市場調查等。
-                  </p>
-              </div>
-              <ul class="list-group list-group-flush border-top">
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                  <span class="fw-semibold">AI 模型</span>
-                  <span>昊昊</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                  <span>#聊天</span>
-                  <a href="javascript:;" class="lh-0 d-block"><span class="material-symbols-outlined">share</span></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100 overflow-hidden">
-              <div class="overflow-hidden">
-                <img
-                  src="https://images.unsplash.com/photo-1655635643532-fa9ba2648cbe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80"
-                  class="card-img-top object-fit-cover" alt="cardItem" style="height: 312px;">
-              </div>
-              <div class="card-body">
-                <h3 class="card-title h6 fw-bold mb-3">Sentiment Analysis API</h5>
-                  <p class="card-text small">自動識別文本中的情感傾向，包括正向、負向和中性等。適用於情感分析、社交媒體監控、市場調查等。</p>
-              </div>
-              <ul class="list-group list-group-flush border-top">
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                  <span class="fw-semibold">AI 模型</span>
-                  <span>昊昊</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                  <span>#聊天</span>
-                  <a href="javascript:;" class="lh-0 d-block"><span class="material-symbols-outlined">share</span></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
         <section class="py-6">
           <h4 class="mb-6 text-center text-dark">Dropdown btn </h4>
           <!-- Example single danger button -->
-          <div class="btn-group">
-            <button type="button" class="dropdown-toggle btn bg-black-20 text-black-100 py-5 px-9" data-bs-toggle="dropdown" aria-expanded="false">篩選<span class="material-symbols-outlined">filter_alt</span>
-            </button>
-            <ul class="dropdown-menu filter" style="width: 240px;">
-              <li><a class="dropdown-item text-sm fw-semibold text-black-60 dropdown-title" href="#">AI 模型</a></li>
-              <li><a class="dropdown-item" href="javascript:;">所有模型</a></li>
-              <li><a class="dropdown-item" href="javascript:;">卡卡</a></li>
-              <li><a class="dropdown-item active" href="javascript:;">杰杰</a></li>
-              <li><a class="dropdown-item" href="javascript:;">琪琪</a></li>
-              <li><a class="dropdown-item" href="javascript:;">昊昊</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item text-sm fw-semibold text-black-60 dropdown-title" href="javascript:;">類型</a></li>
-              <li><a class="dropdown-item" href="javascript:;">所有類型</a></li>
-              <li><a class="dropdown-item" href="javascript:;">篩選項目 1</a></li>
-              <li><a class="dropdown-item" href="javascript:;">篩選項目 2</a></li>
-              <li><a class="dropdown-item" href="javascript:;">篩選項目 3</a></li>
-              <li><a class="dropdown-item" href="javascript:;">篩選項目 4</a></li>
-              <li><a class="dropdown-item" href="javascript:;">篩選項目 5</a></li>
-              <li><a class="dropdown-item" href="javascript:;">篩選項目 6</a></li>
-            </ul>
+          <div class="d-flex justify-content-between">
+            <div class="btn-group filter-btn-group" id="filter">
+              <button type="button" class="dropdown-toggle btn bg-black-20 text-black-100 py-5 px-9 text-start"
+                data-bs-toggle="dropdown" aria-expanded="false" data-value="篩選" style="min-width: 132px;">篩選
+              </button>
+              <ul class="dropdown-menu" style="min-width: 240px;">
+                <li><a class="dropdown-item text-sm fw-semibold text-black-60 dropdown-title disabled" href="#">AI 模型</a></li>
+                <li><a class="dropdown-item" href="javascript:;" data-type="all">所有模型</a></li>
+                <li><a class="dropdown-item" href="javascript:;" data-type="卡卡">卡卡</a></li>
+                <li><a class="dropdown-item active" href="javascript:;" data-type="杰杰">杰杰</a></li>
+                <li><a class="dropdown-item" href="javascript:;" data-type="琪琪">琪琪</a></li>
+                <li><a class="dropdown-item" href="javascript:;" data-type="昊昊">昊昊</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item text-sm fw-semibold text-black-60 dropdown-title disabled" href="javascript:;">類型</a>
+                </li>
+                <li><a class="dropdown-item" href="javascript:;">所有類型</a></li>
+                <li><a class="dropdown-item" href="javascript:;">篩選項目 1</a></li>
+                <li><a class="dropdown-item" href="javascript:;">篩選項目 2</a></li>
+                <li><a class="dropdown-item" href="javascript:;">篩選項目 3</a></li>
+                <li><a class="dropdown-item" href="javascript:;">篩選項目 4</a></li>
+                <li><a class="dropdown-item" href="javascript:;">篩選項目 5</a></li>
+                <li><a class="dropdown-item" href="javascript:;">篩選項目 6</a></li>
+              </ul>
+            </div>
+
+            <div class="btn-group sort-btn-group" id="sort-latest">
+              <button type="button" class="dropdown-toggle btn bg-black-20 text-black-100 py-5 px-9"
+                data-bs-toggle="dropdown" aria-expanded="false" style="width: 164px;">由新到舊</button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="javascript:;">由新到舊</a></li>
+                <li><a class="dropdown-item" href="javascript:;">由舊到新</a></li>
+              </ul>
+            </div>
+
           </div>
         </section>
       </div>
     </div>
-
+    <div class="container">
+      <div>
+        <h3 class="mb-5 text-center">Pagination</h3>
+        <ul class="pagination justify-content-center">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="sitemap border-top py-14 d-lg-flex justify-content-lg-between flex-lg-row-reverse">
+        <div class="mb-7 mb-lg-0">
+          <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/logo.png"
+            class="img-fluid footer-logo" alt="logo">
+        </div>
+        <ul class="list-unstyled mb-0">
+          <li class="mb-2"><a href="javascript:;" class="sitemap-item fw-bold">首頁</a></li>
+          <li><a href="javascript:;" class="sitemap-item fw-bold">定價</a></li>
+        </ul>
+      </div>
+      <div class="py-8 d-lg-flex border-top">
+        <p class="mb-6 mb-lg-0 mb-lg-0 me-lg-15 fw-semibold">AI工具王 © 2023</p>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link me-5" href="javascript:;">Facebook</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link me-5" href="javascript:;">Twitter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:;">Instagram</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
     integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
     crossorigin="anonymous"></script>

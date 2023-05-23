@@ -1,30 +1,63 @@
-.dropdown-toggle {
-  &::after {
-    content: none;
-  }
-  .material-symbols-outlined {
-    font-size: 14px;
-    margin-left: 12px;
-  }
-}
-
-.dropdown-menu {
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
-  .dropdown-item {
-    position: relative;
-    transition: all .25s ease 0s;
-    &.active {
+.btn-group {
+  &.filter-btn-group {
+    .dropdown-toggle {
       &::after {
-        content: "\e5ca";
+        font-family: "Material Symbols Outlined";
+        content: "\ef4f";
         position: absolute;
-        right: 40px;
+        border: none;
         top: 50%;
+        right: 32px;
         transform: translateY(-50%);
+      }
+      &.noIcon {
+        text-align: center!important;
+        &::after{
+          content:none
+        }
+      }
+
+      .material-symbols-outlined {
+        font-size: 14px;
+        margin-left: 12px;
+      }
+    }
+
+    .dropdown-menu {
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+
+      .dropdown-item {
+        position: relative;
+        transition: all .25s ease 0s;
+        &.active {
+          &::after {
+            font-family: "Material Symbols Outlined";
+            content: "\e5ca";
+            position: absolute;
+            right: 40px;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+      }
+
+      .dropdown-title {
+        font-size: $font-size-base * 0.75;
+        line-height: 1.125;
       }
     }
   }
-  .dropdown-title {
-    font-size: $font-size-base * 0.75;
-    line-height: 1.125;
+  &.sort-btn-group {
+    .dropdown-toggle {
+      &::after {
+        font-family: "Material Symbols Outlined";
+        content: "\e5cf";
+        position: absolute;
+        border: none;
+        top: 50%;
+        right: 32px;
+        transform: translateY(-50%);
+      }
+    }
   }
 }

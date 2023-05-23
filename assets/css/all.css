@@ -5002,7 +5002,7 @@ textarea.form-control-lg {
   --bs-nav-link-padding-y: 0;
   --bs-nav-link-font-weight: 700;
   --bs-nav-link-color: #ffffff;
-  --bs-nav-link-hover-color: var(--bs-link-hover-color);
+  --bs-nav-link-hover-color: #F18724;
   --bs-nav-link-disabled-color: var(--bs-secondary-color);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5022,8 +5022,8 @@ textarea.form-control-lg {
   color: var(--bs-nav-link-color);
   background: none;
   border: 0;
-  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  -webkit-transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out, border-color 0.15s ease-in-out;
+  transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out, border-color 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
   .nav-link {
@@ -22308,11 +22308,11 @@ textarea.form-control-lg {
     width: 250px;
   }
 }
-.navbar .nav-link {
-  color: #ffffff;
-}
-.navbar .nav-link.active, .navbar .nav-link:hover {
-  color: var(--bs-primary);
+@media (max-width: 991.98px) {
+  .navbar .nav-link {
+    font-size: 5rem;
+    line-height: 1.2;
+  }
 }
 .navbar .navbar-toggler {
   position: relative;
@@ -22363,6 +22363,25 @@ textarea.form-control-lg {
   background-color: var(--bs-primary);
 }
 
+.footer .sitemap-item {
+  color: #fff;
+  font-size: 3rem;
+  -webkit-transition: all 0.25s ease 0s;
+  transition: all 0.25s ease 0s;
+}
+@media (min-width: 992px) {
+  .footer .sitemap-item {
+    font-size: 5rem;
+    line-height: 1.2;
+  }
+}
+.footer .sitemap-item:hover {
+  color: #F18724 !important;
+}
+.footer .footer-logo {
+  width: 255px;
+}
+
 .card {
   -webkit-transition: all 0.25s ease 0s;
   transition: all 0.25s ease 0s;
@@ -22380,24 +22399,37 @@ textarea.form-control-lg {
           transform: scale(1.05);
 }
 
-.dropdown-toggle::after {
+.btn-group.filter-btn-group .dropdown-toggle::after {
+  font-family: "Material Symbols Outlined";
+  content: "\ef4f";
+  position: absolute;
+  border: none;
+  top: 50%;
+  right: 32px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.btn-group.filter-btn-group .dropdown-toggle.noIcon {
+  text-align: center !important;
+}
+.btn-group.filter-btn-group .dropdown-toggle.noIcon::after {
   content: none;
 }
-.dropdown-toggle .material-symbols-outlined {
+.btn-group.filter-btn-group .dropdown-toggle .material-symbols-outlined {
   font-size: 14px;
   margin-left: 12px;
 }
-
-.dropdown-menu {
+.btn-group.filter-btn-group .dropdown-menu {
   -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
-.dropdown-menu .dropdown-item {
+.btn-group.filter-btn-group .dropdown-menu .dropdown-item {
   position: relative;
   -webkit-transition: all 0.25s ease 0s;
   transition: all 0.25s ease 0s;
 }
-.dropdown-menu .dropdown-item.active::after {
+.btn-group.filter-btn-group .dropdown-menu .dropdown-item.active::after {
+  font-family: "Material Symbols Outlined";
   content: "\e5ca";
   position: absolute;
   right: 40px;
@@ -22405,7 +22437,17 @@ textarea.form-control-lg {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
-.dropdown-menu .dropdown-title {
+.btn-group.filter-btn-group .dropdown-menu .dropdown-title {
   font-size: 0.75rem;
   line-height: 1.125;
+}
+.btn-group.sort-btn-group .dropdown-toggle::after {
+  font-family: "Material Symbols Outlined";
+  content: "\e5cf";
+  position: absolute;
+  border: none;
+  top: 50%;
+  right: 32px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }

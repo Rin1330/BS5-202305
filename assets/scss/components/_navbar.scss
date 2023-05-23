@@ -21,10 +21,9 @@
     }
   }
   .nav-link {
-    color: #ffffff;
-    &.active,
-    &:hover {
-      color: var(--bs-primary)
+    @include media-breakpoint-down(lg) {
+      font-size: 5rem;
+      line-height: 1.2;
     }
   }
 
@@ -61,5 +60,6 @@
       }
     }
   }
+  
 }
 
