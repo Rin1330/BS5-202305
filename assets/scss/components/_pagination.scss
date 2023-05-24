@@ -1,0 +1,22 @@
+.pagination {
+  .page-item {
+    margin-right: 4px;
+    &:last-child {
+      margin-right: 0;
+    }
+    .page-link {
+      width: 48px;
+      height: 48px;
+      font-size: 0.875rem;
+      line-height: 1.5;
+      color: $black-100;
+      background-color: transparent;
+      box-shadow: none;
+      transition: all .25s ease 0s;
+      &:hover {
+        color: #ffffff;
+        background-color: $black-100;
+      }
+    }
+  }
+}

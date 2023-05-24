@@ -14,7 +14,9 @@
   <header>
     <nav class="navbar navbar-expand-lg py-7 py-lg-5">
       <div class="container">
-        <h1 class="mb-0"><a class="navbar-brand lh-0 d-block p-0 m-0" href="#"><img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/logo.png" class="img-fluid" alt="logo"></a></h1>
+        <h1 class="mb-0"><a class="navbar-brand lh-0 d-block p-0 m-0" href="#"><img
+              src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/logo.png"
+              class="img-fluid" alt="logo"></a></h1>
         <button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasRight" aria-controls="#offcanvasRight" aria-expanded="false"
           aria-label="Toggle navigation">
@@ -189,7 +191,8 @@
                 data-bs-toggle="dropdown" aria-expanded="false" data-value="篩選" style="min-width: 132px;">篩選
               </button>
               <ul class="dropdown-menu" style="min-width: 240px;">
-                <li><a class="dropdown-item text-sm fw-semibold text-black-60 dropdown-title disabled" href="#">AI 模型</a></li>
+                <li><a class="dropdown-item text-sm fw-semibold text-black-60 dropdown-title disabled" href="#">AI
+                    模型</a></li>
                 <li><a class="dropdown-item" href="javascript:;" data-type="all">所有模型</a></li>
                 <li><a class="dropdown-item" href="javascript:;" data-type="卡卡">卡卡</a></li>
                 <li><a class="dropdown-item active" href="javascript:;" data-type="杰杰">杰杰</a></li>
@@ -198,7 +201,8 @@
                 <li>
                   <hr class="dropdown-divider">
                 </li>
-                <li><a class="dropdown-item text-sm fw-semibold text-black-60 dropdown-title disabled" href="javascript:;">類型</a>
+                <li><a class="dropdown-item text-sm fw-semibold text-black-60 dropdown-title disabled"
+                    href="javascript:;">類型</a>
                 </li>
                 <li><a class="dropdown-item" href="javascript:;">所有類型</a></li>
                 <li><a class="dropdown-item" href="javascript:;">篩選項目 1</a></li>
@@ -221,27 +225,67 @@
 
           </div>
         </section>
+        <section class="py-6">
+          <h3 class="mb-5 text-center text-black-100">Pagination</h3>
+          <ul class="pagination justify-content-center">
+            <li class="page-item">
+              <a class="page-link page-link fw-semibold d-flex justify-content-center align-items-center p-0 rounded-4 outline-0"
+                href="#" aria-label="Previous">
+                <span class="material-symbols-outlined">navigate_before</span>
+              </a>
+            </li>
+            <li class="page-item"><a
+                class="page-link fw-semibold d-flex justify-content-center align-items-center p-0 rounded-4 outline-0"
+                href="#">1</a></li>
+            <li class="page-item"><a
+                class="page-link fw-semibold d-flex justify-content-center align-items-center p-0 rounded-4 outline-0"
+                href="#">2</a></li>
+            <li class="page-item"><a
+                class="page-link fw-semibold d-flex justify-content-center align-items-center p-0 rounded-4 outline-0"
+                href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link page-link fw-semibold d-flex justify-content-center align-items-center p-0 rounded-4 outline-0"
+                href="#" aria-label="Next">
+                <span class="material-symbols-outlined">navigate_next</span>
+              </a>
+            </li>
+          </ul>
+        </section>
       </div>
     </div>
     <div class="container">
-      <div>
-        <h3 class="mb-5 text-center">Pagination</h3>
-        <ul class="pagination justify-content-center">
-          <li class="page-item">
-            <a class="page-link" href="#" aria-label="Previous">
-              <span aria-hidden="true">&laquo;</span>
-            </a>
-          </li>
-          <li class="page-item"><a class="page-link" href="#">1</a></li>
-          <li class="page-item"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
-          <li class="page-item">
-            <a class="page-link" href="#" aria-label="Next">
-              <span aria-hidden="true">&raquo;</span>
-            </a>
-          </li>
-        </ul>
-      </div>
+      <section class="py-6">
+        <h2 class="mb-5 text-center">Accordion</h2>
+        <div class="accordion mb-4" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed fw-semibold ps-12 ps-lg-14" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                Accordion Item #1
+              </button>
+            </h2>
+            <div id="collapseOne" class="collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion mb-4" id="accordion-2">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed fw-semibold ps-12 ps-lg-14" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+                Accordion Item #2
+              </button>
+            </h2>
+            <div id="collapse-2" class="collapse" data-bs-parent="#accordion-2">
+              <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   </main>
   <footer class="footer">

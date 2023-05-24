@@ -1,0 +1,23 @@
+.accordion-item {
+  &.active {
+    border: 2px solid #ffffff;
+  }
+  .accordion-button {
+    font-size: 1.25rem;
+    line-height: 1.2;
+    font-weight: 700;
+    transition: all .25s ease 0s;
+    &:not(.collapsed){
+      border-bottom: none;
+    }
+  }
+  
+  .collapse{
+    .accordion-body {
+      border-top: none!important;
+      border-bottom-left-radius: 1rem!important;
+      border-bottom-right-radius: 1rem!important;
+      transition: all .25s ease 0s;
+    }
+  }
+}
