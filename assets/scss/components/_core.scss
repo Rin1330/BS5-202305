@@ -1,0 +1,52 @@
+section {
+  padding: 3.75rem 0;
+  @include media-breakpoint-up(lg) {
+    padding: 5rem 0;
+  }
+}
+
+// banner 
+.banner {
+  padding-bottom: 3.75rem;
+  @include media-breakpoint-up(lg) {
+    padding-bottom: 5rem;
+  }
+  .text {
+    font-size: 3rem;
+    line-height: 1.2;
+    @include media-breakpoint-up(lg) {
+      font-size: 7.5rem;
+    }
+  }
+  .motin {
+    margin-top: 180px;
+    @include media-breakpoint-up(lg) {
+      margin-top: 100px;
+    }
+    .deco-img {
+      width: 117px;
+      @include media-breakpoint-up(lg) {
+        width: 160px;
+      }
+    }
+  }
+}
+
+// service
+.service {
+  &-title {
+    font-size: 1.25rem;
+    transition: all .25s ease 0s;
+    @include media-breakpoint-up(lg) {
+      font-size: 2rem;
+    }
+  }
+  &-text {
+    font-size: 2rem;
+    line-height: 1.2;
+    transition: all .25s ease 0s;
+    @include media-breakpoint-up(lg) {
+      font-size: 3rem;
+    }
+  }
+}
