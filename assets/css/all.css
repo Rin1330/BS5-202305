@@ -21082,3 +21082,13 @@ section {
   border-bottom-right-radius: 1rem !important;
   transition: all 0.25s ease 0s;
 }
+
+.swiper {
+  width: 100%;
+}
+.swiper .swiper-slide img {
+  width: 160px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
