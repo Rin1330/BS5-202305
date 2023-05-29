@@ -38,17 +38,16 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   }
 
-  if (document.getElementsByClassName('accordion-button')) {
+  if(document.getElementsByClassName('accordion-button')) {
     const btns = document.querySelectorAll('.accordion-button');
 
-    btns.forEach(btn => {
+    btns.forEach( btn => {
       btn.addEventListener('click', e => {
         const el = e.target.parentNode.nextElementSibling
-        console.log(el);
         e.target.parentNode.parentNode.classList.remove('active')
-        if (!e.target.classList.contains('collapsed') && el.classList.contains('show')) {
+        if(!e.target.classList.contains('collapsed') && !el.classList.contains('show')){
           e.target.parentNode.parentNode.classList.add('active')
-        }
+        } 
       })
     })
   }
