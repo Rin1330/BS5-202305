@@ -63,3 +63,13 @@
   
 }
 
+.ai-tools-filter {
+  .nav-link {
+    color: $black-60;
+    &.active,
+    &:hover  {
+      color: $black-100;
+    }
+  }
+}
+

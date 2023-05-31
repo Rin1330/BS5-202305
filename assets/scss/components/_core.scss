@@ -50,3 +50,17 @@ section {
     }
   }
 }
+
+// ai-tool
+.ai-tools {
+  border-radius: 20px;
+  @include media-breakpoint-up(lg) {
+    border-radius: 160px;
+  }
+  &-title {
+    font-size: 2rem;
+    @include media-breakpoint-up(lg) {
+      font-size: 5rem;
+    }
+  }
+}

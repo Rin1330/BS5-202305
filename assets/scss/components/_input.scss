@@ -1,0 +1,17 @@
+.customInput {
+  position: relative;
+  width: 100%;
+  padding: 20px 20px 20px 76px;
+  border-radius: 16px;
+  background: #F2F2F2;
+  border: 0;
+  outline: 0;
+}
+
+.searchIcon {
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  transform: translateY(-50%);
+  z-index: 10;
+}
