@@ -5,36 +5,9 @@ section {
   }
 }
 
-// banner 
-.banner {
-  padding-bottom: 3.75rem;
-  @include media-breakpoint-up(lg) {
-    padding-bottom: 5rem;
-  }
-  .text {
-    font-size: 3rem;
-    line-height: 1.2;
-    @include media-breakpoint-up(lg) {
-      font-size: 7.5rem;
-    }
-  }
-  .motin {
-    margin-top: 180px;
-    @include media-breakpoint-up(lg) {
-      margin-top: 100px;
-    }
-    .deco-img {
-      width: 117px;
-      @include media-breakpoint-up(lg) {
-        width: 160px;
-      }
-    }
-  }
-}
-
 // service
 .service {
-  &-title {
+  .h3 {
     font-size: 1.25rem;
     transition: all .25s ease 0s;
     @include media-breakpoint-up(lg) {
@@ -51,6 +24,15 @@ section {
   }
 }
 
+.partnership {
+  .h3 {
+    font-size: 1.25rem;
+    transition: all .25s ease 0s;
+    @include media-breakpoint-up(lg) {
+      font-size: 2rem;
+    }
+  }
+}
 // ai-tool
 .ai-tools {
   border-radius: 20px;
@@ -62,5 +44,14 @@ section {
     @include media-breakpoint-up(lg) {
       font-size: 5rem;
     }
+  }
+}
+
+// backtotop 
+.toTop {
+  @include media-breakpoint-down(md) {
+    position: absolute;
+    top: 32px;
+    right: 12px;
   }
 }

@@ -1,0 +1,65 @@
+.banner {
+  padding-bottom: 3.75rem;
+  @include media-breakpoint-up(lg) {
+    padding-bottom: 5rem;
+  }
+  .text {
+    font-size: 3rem;
+    line-height: 1.2;
+    @include media-breakpoint-up(lg) {
+      font-size: 7.5rem;
+    }
+  }
+  .motin {
+    margin-top: 180px;
+    @include media-breakpoint-up(lg) {
+      margin-top: 100px;
+    }
+    .deco-img {
+      width: 117px;
+      transform: translateY(100%);
+      animation-name: decoShow;
+      animation-duration: 8s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-fill-mode: forwards;
+      @include media-breakpoint-up(lg) {
+        width: 160px;
+      }
+    }
+  }
+}
+
+@keyframes decoShow {
+  0% {
+    transform: translateY(100%);
+  }
+
+  25% {
+    transform: translateY(0);
+  }
+
+  35% {
+    transform: translateY(0);
+  }
+
+  45% {
+    transform: translateY(0);
+  }
+
+  55% {
+    transform: translateY(-50%);
+  }
+
+  65% {
+    transform: translateY(-75%);
+  }
+
+  75% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}

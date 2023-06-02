@@ -52,14 +52,24 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   }
 
-  if (document.querySelector('#partnership-1')) {
-    const swiper = new Swiper('#partnership-1', {
-      direction: 'horizontal',
-      loop: true,
-      speed: 300,
-      spaceBetween: 30,
-      mousewheel: true,
+  if(document.querySelector('#toTop')) {
+    document.querySelector('#toTop').addEventListener('click', (e) => {
+      e.preventDefault()
+      window.scrollTo({top: 0, behavior: 'smooth'});
+      e.target.blur();
+      
     })
-  }
+  } 
+
+  // if (document.querySelector('#partnership-1')) {
+  //   const swiper = new Swiper('#partnership-1', {
+  //     direction: 'horizontal',
+  //     loop: true,
+  //     speed: 300,
+  //     spaceBetween: 30,
+  //     mousewheel: true,
+  //   })
+  // }
+
 
 });
