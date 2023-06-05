@@ -3,12 +3,27 @@
     border: 2px solid #ffffff;
   }
   .accordion-button {
+    position: relative;
     font-size: 1.25rem;
     line-height: 1.2;
     font-weight: 700;
     transition: all .25s ease 0s;
     &:not(.collapsed){
       border-bottom: none;
+    }
+    &::after {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      @include media-breakpoint-up(lg) {
+        left: 40px;
+      }
+    }
+    &.collapsed::after {
+      background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20height%3D%2224%22%20viewBox%3D%220%20-960%20960%20960%22%20width%3D%2224%22%20fill%3D%22%23ffffff%22%3E%3Cpath%20d%3D%22M450-200v-250H200v-60h250v-250h60v250h250v60H510v250h-60Z%22/%3E%3C/svg%3E")
+    }
+    &:not(.collapsed)::after {
+      background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20height%3D%2224%22%20viewBox%3D%220%20-960%20960%20960%22%20width%3D%2224%22%20fill%3D%22%23ffffff%22%3E%3Cpath%20d%3D%22M200-450v-60h560v60H200Z%22/%3E%3C/svg%3E")
     }
   }
   

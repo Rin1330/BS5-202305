@@ -15,16 +15,39 @@
     @include media-breakpoint-up(lg) {
       margin-top: 100px;
     }
-    .deco-img {
-      width: 117px;
+    .motin-item {
       transform: translateY(100%);
       animation-name: decoShow;
       animation-duration: 8s;
       animation-iteration-count: infinite;
       animation-timing-function: linear;
       animation-fill-mode: forwards;
+      @for $i from 1 through 3 {
+        &:nth-child(#{$i}){
+          // animation-duration: 8s - $i;
+          animation-delay: 1s*$i;
+        }
+      }
+    }
+    .deco-img {
+      width: 117px;
       @include media-breakpoint-up(lg) {
         width: 160px;
+      }
+    }
+  }
+  .banner-price {
+    .sub {
+      font-size: 1.75rem;
+      line-height: 1.2;
+      @include media-breakpoint-up(lg) {
+        font-size: 3rem;
+      }
+    }
+    .motin {
+      margin-top: 258px;
+      @include media-breakpoint-up(lg) {
+        margin-top: 238px;
       }
     }
   }
@@ -33,6 +56,15 @@
 @keyframes decoShow {
   0% {
     transform: translateY(100%);
+  }
+
+
+  10% {
+    transform: translateY(100%);
+  }
+
+  15% {
+    transform: translateY(0);
   }
 
   25% {
@@ -48,14 +80,26 @@
   }
 
   55% {
-    transform: translateY(-50%);
+    transform: translateY(0);
   }
 
   65% {
-    transform: translateY(-75%);
+    transform: translateY(-50%);
   }
 
   75% {
+    transform: translateY(-75%);
+  }
+
+  85% {
+    transform: translateY(-100%);
+  }
+
+  90% {
+    transform: translateY(-100%);
+  }
+
+  95% {
     transform: translateY(-100%);
   }
 

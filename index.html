@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="./assets/css/all.css">
 </head>
 
-<body class="bg-dark">
+<body>
   <header>
     <div class="container">
       <nav class="navbar navbar-expand-lg py-7 py-lg-5 border-bottom">
@@ -30,10 +30,10 @@
           <div class="offcanvas-body w-100 d-flex justify-content-center align-items-center">
             <ul class="nav ms-lg-auto w-100 w-auto d-flex flex-column flex-lg-row text-center">
               <li class="nav-item mb-2 mb-lg-0 me-lg-5">
-                <a class="nav-link active" aria-current="page" href="#">首頁</a>
+                <a class="nav-link active" aria-current="page" href="./index.html">首頁</a>
               </li>
               <li class="nav-item mb-2 mb-lg-0 me-lg-5">
-                <a class="nav-link" href="javascript:;">定價</a>
+                <a class="nav-link" href="./price.html">定價</a>
               </li>
             </ul>
           </div>
@@ -45,11 +45,11 @@
         </div>
         <button type="button" class="btn btn-outline-light">開始使用</button>
         <ul class="motin list-unstyled d-flex justify-content-end mb-0 position-relative overflow-hidden">
-          <li><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/deco.png?raw=true"
+          <li class="motin-item"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/deco.png?raw=true"
               class="deco-img img-fluid" alt="deco1"></li>
-          <li><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/deco.png?raw=true"
+          <li class="motin-item"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/deco.png?raw=true"
               class="deco-img img-fluid" alt="deco2"></li>
-          <li><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/deco.png?raw=true"
+          <li class="motin-item"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/deco.png?raw=true"
               class="deco-img img-fluid" alt="deco3"></li>
         </ul>
       </div>
@@ -232,253 +232,255 @@
       </section>
     </div>
     <!-- AI Tools -->
-    <section class="ai-tools py-14 py-lg-19 bg-white">
-      <div class="container">
-        <h2 class="ai-tools-title fw-bold text-center mb-8 mb-lg-14 text-black-100">這些超酷的應用，都來自 AI工具王</h2>
-        <!-- input Area -->
-        <div class="searchBox position-relative mb-4 mb-lg-6">
-          <span class="material-symbols-outlined searchIcon text-black-60">search</span>
-          <input type="text" class="customInput" placeholder="輸入關鍵字搜尋">
-        </div>
-        <!-- filter Area -->
-        <div class="d-flex justify-content-between align-items-center flex-wrap mb-10 mb-lg-9">
-          <div class="btn-group filter-btn-group mb-4 mb-lg-0 order-lg-1" id="filter">
-            <button type="button" class="dropdown-toggle btn bg-black-20 text-black-100 py-5 px-9 text-start"
-              data-bs-toggle="dropdown" aria-expanded="false" data-value="篩選"
-              style="min-width: 132px; font-size: 1rem; line-height: 1.5;">篩選
-            </button>
-            <ul class="dropdown-menu" style="min-width: 240px;">
-              <li><a class="dropdown-item text-sm fw-semibold text-black-60 dropdown-title disabled" href="#">AI
-                  模型</a></li>
-              <li><a class="dropdown-item" href="javascript:;" data-type="all">所有模型</a></li>
-              <li><a class="dropdown-item" href="javascript:;" data-type="卡卡">卡卡</a></li>
-              <li><a class="dropdown-item active" href="javascript:;" data-type="杰杰">杰杰</a></li>
-              <li><a class="dropdown-item" href="javascript:;" data-type="琪琪">琪琪</a></li>
-              <li><a class="dropdown-item" href="javascript:;" data-type="昊昊">昊昊</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item text-sm fw-semibold text-black-60 dropdown-title disabled"
-                  href="javascript:;">類型</a>
-              </li>
-              <li><a class="dropdown-item" href="javascript:;">所有類型</a></li>
-              <li><a class="dropdown-item" href="javascript:;">篩選項目 1</a></li>
-              <li><a class="dropdown-item" href="javascript:;">篩選項目 2</a></li>
-              <li><a class="dropdown-item" href="javascript:;">篩選項目 3</a></li>
-              <li><a class="dropdown-item" href="javascript:;">篩選項目 4</a></li>
-              <li><a class="dropdown-item" href="javascript:;">篩選項目 5</a></li>
-              <li><a class="dropdown-item" href="javascript:;">篩選項目 6</a></li>
-            </ul>
+    <section class="aiTools">
+      <div class="ai-tools py-14 py-lg-19 bg-white">
+        <div class="container">
+          <h2 class="ai-tools-title fw-bold text-center mb-8 mb-lg-14 text-black-100">這些超酷的應用，都來自 AI工具王</h2>
+          <!-- input Area -->
+          <div class="searchBox position-relative mb-4 mb-lg-6">
+            <span class="material-symbols-outlined searchIcon text-black-60">search</span>
+            <input type="text" class="customInput" placeholder="輸入關鍵字搜尋">
           </div>
-          <div class="btn-group sort-btn-group mb-4 mb-lg-0 order-lg-3" id="sort-latest">
-            <button type="button" class="dropdown-toggle btn bg-black-20 text-black-100 py-5 px-9"
-              data-bs-toggle="dropdown" aria-expanded="false"
-              style="width: 164px; font-size: 1rem; line-height: 1.5;">由新到舊</button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="javascript:;">由新到舊</a></li>
-              <li><a class="dropdown-item" href="javascript:;">由舊到新</a></li>
-            </ul>
-          </div>
-          <div class="order-lg-2 d-flex mx-auto">
-            <ul class="nav ai-tools-filter w-100">
-              <li class="nav-item mx-1">
-                <a class="nav-link px-4 py-2 fw-normal active" aria-current="all" href="javascript:;">全部</a>
-              </li>
-              <li class="nav-item mx-1">
-                <a class="nav-link px-4 py-2 fw-normal" href="javascript:;">聊天</a>
-              </li>
-              <li class="nav-item mx-1">
-                <a class="nav-link px-4 py-2 fw-normal" href="javascript:;">影像辨識</a>
-              </li>
-              <li class="nav-item mx-1">
-                <a class="nav-link px-4 py-2 fw-normal" href="javascript:;">翻譯</a>
-              </li>
-              <li class="nav-item mx-1">
-                <a class="nav-link px-4 py-2 fw-normal" href="javascript:;">行銷</a>
-              </li>
-              <li class="nav-item mx-1">
-                <a class="nav-link px-4 py-2 fw-normal" href="javascript:;">客服</a>
-              </li>
-              <li class="nav-item mx-1">
-                <a class="nav-link px-4 py-2 fw-normal" href="javascript:;">生產力</a>
-              </li>
+          <!-- filter Area -->
+          <div class="d-flex justify-content-between align-items-center flex-wrap mb-10 mb-lg-9">
+            <div class="btn-group filter-btn-group mb-4 mb-lg-0 order-lg-1" id="filter">
+              <button type="button" class="dropdown-toggle btn bg-black-20 text-black-100 py-5 px-9 text-start"
+                data-bs-toggle="dropdown" aria-expanded="false" data-value="篩選"
+                style="min-width: 132px; font-size: 1rem; line-height: 1.5;">篩選
+              </button>
+              <ul class="dropdown-menu" style="min-width: 240px;">
+                <li><a class="dropdown-item text-sm fw-semibold text-black-60 dropdown-title disabled" href="#">AI
+                    模型</a></li>
+                <li><a class="dropdown-item" href="javascript:;" data-type="all">所有模型</a></li>
+                <li><a class="dropdown-item" href="javascript:;" data-type="卡卡">卡卡</a></li>
+                <li><a class="dropdown-item active" href="javascript:;" data-type="杰杰">杰杰</a></li>
+                <li><a class="dropdown-item" href="javascript:;" data-type="琪琪">琪琪</a></li>
+                <li><a class="dropdown-item" href="javascript:;" data-type="昊昊">昊昊</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item text-sm fw-semibold text-black-60 dropdown-title disabled"
+                    href="javascript:;">類型</a>
+                </li>
+                <li><a class="dropdown-item" href="javascript:;">所有類型</a></li>
+                <li><a class="dropdown-item" href="javascript:;">篩選項目 1</a></li>
+                <li><a class="dropdown-item" href="javascript:;">篩選項目 2</a></li>
+                <li><a class="dropdown-item" href="javascript:;">篩選項目 3</a></li>
+                <li><a class="dropdown-item" href="javascript:;">篩選項目 4</a></li>
+                <li><a class="dropdown-item" href="javascript:;">篩選項目 5</a></li>
+                <li><a class="dropdown-item" href="javascript:;">篩選項目 6</a></li>
+              </ul>
+            </div>
+            <div class="btn-group sort-btn-group mb-4 mb-lg-0 order-lg-3" id="sort-latest">
+              <button type="button" class="dropdown-toggle btn bg-black-20 text-black-100 py-5 px-9"
+                data-bs-toggle="dropdown" aria-expanded="false"
+                style="width: 164px; font-size: 1rem; line-height: 1.5;">由新到舊</button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="javascript:;">由新到舊</a></li>
+                <li><a class="dropdown-item" href="javascript:;">由舊到新</a></li>
+              </ul>
+            </div>
+            <div class="order-lg-2 d-flex mx-auto">
+              <ul class="nav ai-tools-filter w-100">
+                <li class="nav-item mx-1">
+                  <a class="nav-link px-4 py-2 fw-normal active" aria-current="all" href="javascript:;">全部</a>
+                </li>
+                <li class="nav-item mx-1">
+                  <a class="nav-link px-4 py-2 fw-normal" href="javascript:;">聊天</a>
+                </li>
+                <li class="nav-item mx-1">
+                  <a class="nav-link px-4 py-2 fw-normal" href="javascript:;">影像辨識</a>
+                </li>
+                <li class="nav-item mx-1">
+                  <a class="nav-link px-4 py-2 fw-normal" href="javascript:;">翻譯</a>
+                </li>
+                <li class="nav-item mx-1">
+                  <a class="nav-link px-4 py-2 fw-normal" href="javascript:;">行銷</a>
+                </li>
+                <li class="nav-item mx-1">
+                  <a class="nav-link px-4 py-2 fw-normal" href="javascript:;">客服</a>
+                </li>
+                <li class="nav-item mx-1">
+                  <a class="nav-link px-4 py-2 fw-normal" href="javascript:;">生產力</a>
+                </li>
 
-            </ul>
+              </ul>
+            </div>
           </div>
+          <!-- ai Tool Items -->
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-6 mt-n6 mb-8 mb-lg-9">
+            <div class="col">
+              <div class="card h-100 overflow-hidden">
+                <div class="overflow-hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1655720837928-38b1a93298ac?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=855&q=80"
+                    class="card-img-top object-fit-cover" alt="cardItem" style="height: 312px;">
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title h6 fw-bold mb-3">Chatbot Builder</h3>
+                  <p class="card-text small">建立智能化的聊天機器人，解答常見問題、提供客戶支援、收集反饋等。</p>
+                </div>
+                <ul class="list-group list-group-flush border-top">
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span class="fw-semibold">AI 模型</span>
+                    <span>卡卡</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span>#聊天</span>
+                    <a href="javascript:;" class="lh-0 d-block"><span class="material-symbols-outlined">share</span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 overflow-hidden">
+                <div class="overflow-hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1655720840699-67e72c0909d1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1567&q=80"
+                    class="card-img-top object-fit-cover" alt="cardItem" style="height: 312px;">
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title h6 fw-bold mb-3">Image Recognition Platform</h3>
+                  <p class="card-text small">專業的圖像識別平台，識別圖像、分類、標記等。</p>
+                </div>
+                <ul class="list-group list-group-flush border-top">
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span class="fw-semibold">AI 模型</span>
+                    <span>杰杰</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span>#影像辨識</span>
+                    <a href="javascript:;" class="lh-0 d-block"><span class="material-symbols-outlined">share</span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 overflow-hidden">
+                <div class="overflow-hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1655720031554-a929595ffad7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80"
+                    class="card-img-top object-fit-cover" alt="cardItem" style="height: 312px;">
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title h6 fw-bold mb-3">Language Translation API</h3>
+                  <p class="card-text small">
+                    專業的語言翻譯 API，實現文本翻譯功能，支援多種格式的文本。
+                  </p>
+                </div>
+                <ul class="list-group list-group-flush border-top">
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span class="fw-semibold">AI 模型</span>
+                    <span>琪琪</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span>#翻譯</span>
+                    <a href="javascript:;" class="lh-0 d-block"><span class="material-symbols-outlined">share</span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 overflow-hidden">
+                <div class="overflow-hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80"
+                    class="card-img-top object-fit-cover" alt="cardItem" style="height: 312px;">
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title h6 fw-bold mb-3">Sentiment Analysis API</h3>
+                  <p class="card-text small">自動識別文本中的情感傾向，包括正向、負向和中性等。適用於情感分析、社交媒體監控、市場調查等。</p>
+                </div>
+                <ul class="list-group list-group-flush border-top">
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span class="fw-semibold">AI 模型</span>
+                    <span>昊昊</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span>#行銷</span>
+                    <a href="javascript:;" class="lh-0 d-block"><span class="material-symbols-outlined">share</span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 overflow-hidden">
+                <div class="overflow-hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1655635643532-fa9ba2648cbe?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1332&amp;q=80"
+                    class="card-img-top object-fit-cover" alt="cardItem" style="height: 312px;">
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title h6 fw-bold mb-3">Fraud Detection Platform</h3>
+                  <p class="card-text small">預防詐騙活動，適用於銀行、金融、電商等。</p>
+                </div>
+                <ul class="list-group list-group-flush border-top">
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span class="fw-semibold">AI 模型</span>
+                    <span>#客服</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span>#客服</span>
+                    <a href="javascript:;" class="lh-0 d-block"><span class="material-symbols-outlined">share</span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 overflow-hidden">
+                <div class="overflow-hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1655721529468-d0d81b2dc489?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80"
+                    class="card-img-top object-fit-cover" alt="cardItem" style="height: 312px;">
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title h6 fw-bold mb-3">Voice Assistant SDK</h3>
+                  <p class="card-text small">通過語音控制應用程式、設備，實現多種功能，例如播放音樂、查詢天氣、發送信息等。</p>
+                </div>
+                <ul class="list-group list-group-flush border-top">
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span class="fw-semibold">AI 模型</span>
+                    <span>杰杰</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span>#生產力</span>
+                    <a href="javascript:;" class="lh-0 d-block"><span class="material-symbols-outlined">share</span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- pagination -->
+          <ul class="pagination justify-content-center justify-content-lg-end">
+            <li class="page-item">
+              <a class="page-link border-0 fw-semibold d-flex justify-content-center align-items-center p-0 rounded-4 outline-0"
+                href="#" aria-label="Previous">
+                <span class="material-symbols-outlined">navigate_before</span>
+              </a>
+            </li>
+            <li class="page-item"><a
+                class="page-link border-0 fw-semibold d-flex justify-content-center align-items-center p-0 rounded-4 outline-0"
+                href="#">1</a></li>
+            <li class="page-item"><a
+                class="page-link border-0 fw-semibold d-flex justify-content-center align-items-center p-0 rounded-4 outline-0"
+                href="#">2</a></li>
+            <li class="page-item"><a
+                class="page-link border-0 fw-semibold d-flex justify-content-center align-items-center p-0 rounded-4 outline-0"
+                href="#">3</a></li>
+            <li class="page-item"><a
+                class="page-link border-0 fw-semibold d-flex justify-content-center align-items-center p-0 rounded-4 outline-0"
+                href="#">4</a></li>
+            <li class="page-item"><a
+                class="page-link border-0 fw-semibold d-flex justify-content-center align-items-center p-0 rounded-4 outline-0"
+                href="#">5</a></li>
+            <li class="page-item">
+              <a class="page-link border-0 fw-semibold d-flex justify-content-center align-items-center p-0 rounded-4 outline-0"
+                href="#" aria-label="Next">
+                <span class="material-symbols-outlined">navigate_next</span>
+              </a>
+            </li>
+          </ul>
         </div>
-        <!-- ai Tool Items -->
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-6 mt-n6 mb-8 mb-lg-9">
-          <div class="col">
-            <div class="card h-100 overflow-hidden">
-              <div class="overflow-hidden">
-                <img
-                  src="https://images.unsplash.com/photo-1655720837928-38b1a93298ac?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=855&q=80"
-                  class="card-img-top object-fit-cover" alt="cardItem" style="height: 312px;">
-              </div>
-              <div class="card-body">
-                <h3 class="card-title h6 fw-bold mb-3">Chatbot Builder</h3>
-                <p class="card-text small">建立智能化的聊天機器人，解答常見問題、提供客戶支援、收集反饋等。</p>
-              </div>
-              <ul class="list-group list-group-flush border-top">
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                  <span class="fw-semibold">AI 模型</span>
-                  <span>卡卡</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                  <span>#聊天</span>
-                  <a href="javascript:;" class="lh-0 d-block"><span class="material-symbols-outlined">share</span></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100 overflow-hidden">
-              <div class="overflow-hidden">
-                <img
-                  src="https://images.unsplash.com/photo-1655720840699-67e72c0909d1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1567&q=80"
-                  class="card-img-top object-fit-cover" alt="cardItem" style="height: 312px;">
-              </div>
-              <div class="card-body">
-                <h3 class="card-title h6 fw-bold mb-3">Image Recognition Platform</h3>
-                <p class="card-text small">專業的圖像識別平台，識別圖像、分類、標記等。</p>
-              </div>
-              <ul class="list-group list-group-flush border-top">
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                  <span class="fw-semibold">AI 模型</span>
-                  <span>杰杰</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                  <span>#影像辨識</span>
-                  <a href="javascript:;" class="lh-0 d-block"><span class="material-symbols-outlined">share</span></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100 overflow-hidden">
-              <div class="overflow-hidden">
-                <img
-                  src="https://images.unsplash.com/photo-1655720031554-a929595ffad7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80"
-                  class="card-img-top object-fit-cover" alt="cardItem" style="height: 312px;">
-              </div>
-              <div class="card-body">
-                <h3 class="card-title h6 fw-bold mb-3">Language Translation API</h3>
-                <p class="card-text small">
-                  專業的語言翻譯 API，實現文本翻譯功能，支援多種格式的文本。
-                </p>
-              </div>
-              <ul class="list-group list-group-flush border-top">
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                  <span class="fw-semibold">AI 模型</span>
-                  <span>琪琪</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                  <span>#翻譯</span>
-                  <a href="javascript:;" class="lh-0 d-block"><span class="material-symbols-outlined">share</span></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100 overflow-hidden">
-              <div class="overflow-hidden">
-                <img
-                  src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80"
-                  class="card-img-top object-fit-cover" alt="cardItem" style="height: 312px;">
-              </div>
-              <div class="card-body">
-                <h3 class="card-title h6 fw-bold mb-3">Sentiment Analysis API</h3>
-                <p class="card-text small">自動識別文本中的情感傾向，包括正向、負向和中性等。適用於情感分析、社交媒體監控、市場調查等。</p>
-              </div>
-              <ul class="list-group list-group-flush border-top">
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                  <span class="fw-semibold">AI 模型</span>
-                  <span>昊昊</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                  <span>#行銷</span>
-                  <a href="javascript:;" class="lh-0 d-block"><span class="material-symbols-outlined">share</span></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100 overflow-hidden">
-              <div class="overflow-hidden">
-                <img
-                  src="https://images.unsplash.com/photo-1655635643532-fa9ba2648cbe?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1332&amp;q=80"
-                  class="card-img-top object-fit-cover" alt="cardItem" style="height: 312px;">
-              </div>
-              <div class="card-body">
-                <h3 class="card-title h6 fw-bold mb-3">Fraud Detection Platform</h3>
-                <p class="card-text small">預防詐騙活動，適用於銀行、金融、電商等。</p>
-              </div>
-              <ul class="list-group list-group-flush border-top">
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                  <span class="fw-semibold">AI 模型</span>
-                  <span>#客服</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                  <span>#客服</span>
-                  <a href="javascript:;" class="lh-0 d-block"><span class="material-symbols-outlined">share</span></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100 overflow-hidden">
-              <div class="overflow-hidden">
-                <img
-                  src="https://images.unsplash.com/photo-1655721529468-d0d81b2dc489?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80"
-                  class="card-img-top object-fit-cover" alt="cardItem" style="height: 312px;">
-              </div>
-              <div class="card-body">
-                <h3 class="card-title h6 fw-bold mb-3">Voice Assistant SDK</h3>
-                <p class="card-text small">通過語音控制應用程式、設備，實現多種功能，例如播放音樂、查詢天氣、發送信息等。</p>
-              </div>
-              <ul class="list-group list-group-flush border-top">
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                  <span class="fw-semibold">AI 模型</span>
-                  <span>杰杰</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                  <span>#生產力</span>
-                  <a href="javascript:;" class="lh-0 d-block"><span class="material-symbols-outlined">share</span></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!-- pagination -->
-        <ul class="pagination justify-content-center justify-content-lg-end">
-          <li class="page-item">
-            <a class="page-link border-0 fw-semibold d-flex justify-content-center align-items-center p-0 rounded-4 outline-0"
-              href="#" aria-label="Previous">
-              <span class="material-symbols-outlined">navigate_before</span>
-            </a>
-          </li>
-          <li class="page-item"><a
-              class="page-link border-0 fw-semibold d-flex justify-content-center align-items-center p-0 rounded-4 outline-0"
-              href="#">1</a></li>
-          <li class="page-item"><a
-              class="page-link border-0 fw-semibold d-flex justify-content-center align-items-center p-0 rounded-4 outline-0"
-              href="#">2</a></li>
-          <li class="page-item"><a
-              class="page-link border-0 fw-semibold d-flex justify-content-center align-items-center p-0 rounded-4 outline-0"
-              href="#">3</a></li>
-          <li class="page-item"><a
-              class="page-link border-0 fw-semibold d-flex justify-content-center align-items-center p-0 rounded-4 outline-0"
-              href="#">4</a></li>
-          <li class="page-item"><a
-              class="page-link border-0 fw-semibold d-flex justify-content-center align-items-center p-0 rounded-4 outline-0"
-              href="#">5</a></li>
-          <li class="page-item">
-            <a class="page-link border-0 fw-semibold d-flex justify-content-center align-items-center p-0 rounded-4 outline-0"
-              href="#" aria-label="Next">
-              <span class="material-symbols-outlined">navigate_next</span>
-            </a>
-          </li>
-        </ul>
       </div>
     </section>
     <div class="container">
@@ -486,8 +488,9 @@
       <section>
         <div class="text-center py-14">
           <h2 class="h1 fw-bold mb-8 mb-lg-9">現在就來建立屬於你的服務吧</h2>
-          <button type="button" class="btn btn-outline-light d-flex align-items-center mx-auto pe-5">開始使用<span class="material-symbols-outlined ms-3">
-            north_east
+          <button type="button" class="btn btn-outline-light d-flex align-items-center mx-auto pe-5">開始使用<span
+              class="material-symbols-outlined ms-3">
+              north_east
             </span></button>
         </div>
       </section>
@@ -519,8 +522,8 @@
               <a class="nav-link" href="javascript:;">Instagram</a>
             </li>
           </ul>
-      </div>
-      <div id="toTop" class="toTop nav"><a href="javascript:;" class="nav-link fw-semibold">Back to top</a></div>  
+        </div>
+        <div id="toTop" class="toTop nav"><a href="javascript:;" class="nav-link fw-semibold">Back to top</a></div>
       </div>
     </div>
   </footer>

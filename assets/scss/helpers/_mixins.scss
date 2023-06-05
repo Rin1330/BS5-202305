@@ -8,3 +8,10 @@
   left: 0;
   transition: background-color .25s ease 0s;
 }
+
+@mixin h3toh6 {
+  font-size: 1.25rem;
+  @include media-breakpoint-up(lg) {
+    font-size: 2rem;
+  }
+}

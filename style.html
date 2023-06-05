@@ -10,7 +10,7 @@
   <script src="./assets/js/all.js"></script>
 </head>
 
-<body class="bg-dark">
+<body>
   <header>
     <nav class="navbar navbar-expand-lg py-7 py-lg-5">
       <div class="container">
@@ -82,8 +82,8 @@
       <hr>
     </div>
     <div class="bg-light mb-14 rounded-4">
-      <h3 class="text-center py-5 text-dark">Card</h3>
       <div class="container">
+        <h3 class="text-center py-5 text-dark">Normal Card</h3>
         <section class="py-6">
           <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-6 mt-n6">
             <div class="col">
@@ -182,76 +182,133 @@
             </div>
           </div>
         </section>
-        <section class="py-6">
-          <h4 class="mb-6 text-center text-dark">Dropdown btn </h4>
-          <!-- Example single danger button -->
-          <div class="d-flex justify-content-between">
-            <div class="btn-group filter-btn-group" id="filter">
-              <button type="button" class="dropdown-toggle btn bg-black-20 text-black-100 py-5 px-9 text-start"
-                data-bs-toggle="dropdown" aria-expanded="false" data-value="篩選" style="min-width: 132px;">篩選
-              </button>
-              <ul class="dropdown-menu" style="min-width: 240px;">
-                <li><a class="dropdown-item text-sm fw-semibold text-black-60 dropdown-title disabled" href="#">AI
-                    模型</a></li>
-                <li><a class="dropdown-item" href="javascript:;" data-type="all">所有模型</a></li>
-                <li><a class="dropdown-item" href="javascript:;" data-type="卡卡">卡卡</a></li>
-                <li><a class="dropdown-item active" href="javascript:;" data-type="杰杰">杰杰</a></li>
-                <li><a class="dropdown-item" href="javascript:;" data-type="琪琪">琪琪</a></li>
-                <li><a class="dropdown-item" href="javascript:;" data-type="昊昊">昊昊</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item text-sm fw-semibold text-black-60 dropdown-title disabled"
-                    href="javascript:;">類型</a>
-                </li>
-                <li><a class="dropdown-item" href="javascript:;">所有類型</a></li>
-                <li><a class="dropdown-item" href="javascript:;">篩選項目 1</a></li>
-                <li><a class="dropdown-item" href="javascript:;">篩選項目 2</a></li>
-                <li><a class="dropdown-item" href="javascript:;">篩選項目 3</a></li>
-                <li><a class="dropdown-item" href="javascript:;">篩選項目 4</a></li>
-                <li><a class="dropdown-item" href="javascript:;">篩選項目 5</a></li>
-                <li><a class="dropdown-item" href="javascript:;">篩選項目 6</a></li>
-              </ul>
-            </div>
-
-            <div class="btn-group sort-btn-group" id="sort-latest">
-              <button type="button" class="dropdown-toggle btn bg-black-20 text-black-100 py-5 px-9"
-                data-bs-toggle="dropdown" aria-expanded="false" style="width: 164px;">由新到舊</button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="javascript:;">由新到舊</a></li>
-                <li><a class="dropdown-item" href="javascript:;">由舊到新</a></li>
-              </ul>
-            </div>
-
-          </div>
-        </section>
-        <section class="py-6">
-          <h3 class="mb-5 text-center text-black-100">Pagination</h3>
-          <ul class="pagination justify-content-center">
-            <li class="page-item">
-              <a class="page-link page-link fw-semibold d-flex justify-content-center align-items-center p-0 rounded-4 outline-0"
-                href="#" aria-label="Previous">
-                <span class="material-symbols-outlined">navigate_before</span>
-              </a>
+        <h3 class="text-center py-5 text-dark">Price Style Card</h3>
+          <ul class="list-unstyled row row-cols-1 row-cols-lg-2 g-3 g-lg-6 mb-0">
+            <li class="col">
+              <div class="card h-100 overflow-hidden price-style">
+                <div class="card-body">
+                  <h3 class="card-title fw-bold mb-3 text-white">名稱</h5>
+                    <ul class="text-black-20">
+                      <li>說明</li>
+                      <li>說明</li>
+                      <li>說明</li>
+                    </ul>
+                </div>
+                <div class="card-footer d-flex justify-content-between py-5 px-8">
+                  <p class="mb-0"><span class="h6">NT$5</span>／ <span class="h6 text-black-60">1k tokens</span></p>
+                  <a href="javascript:;" class="text-white d-flex align-items-center">開始使用<span class="material-symbols-outlined ms-3">north_east</span></a>
+                </div>
+              </div>
             </li>
-            <li class="page-item"><a
-                class="page-link fw-semibold d-flex justify-content-center align-items-center p-0 rounded-4 outline-0"
-                href="#">1</a></li>
-            <li class="page-item"><a
-                class="page-link fw-semibold d-flex justify-content-center align-items-center p-0 rounded-4 outline-0"
-                href="#">2</a></li>
-            <li class="page-item"><a
-                class="page-link fw-semibold d-flex justify-content-center align-items-center p-0 rounded-4 outline-0"
-                href="#">3</a></li>
-            <li class="page-item">
-              <a class="page-link page-link fw-semibold d-flex justify-content-center align-items-center p-0 rounded-4 outline-0"
-                href="#" aria-label="Next">
-                <span class="material-symbols-outlined">navigate_next</span>
-              </a>
+            <li class="col">
+              <div class="card h-100 overflow-hidden price-style">
+                <div class="card-body">
+                  <h3 class="card-title fw-bold mb-3 text-white">名稱</h5>
+                    <ul class="text-black-20">
+                      <li>說明</li>
+                      <li>說明</li>
+                      <li>說明</li>
+                      <li>說明</li>
+                      <li>說明</li>
+                    </ul>
+                </div>
+                <div class="card-footer d-flex justify-content-between py-5 px-8">
+                  <p class="mb-0"><span class="h6">NT$5</span>／ <span class="h6 text-black-60">1k tokens</span></p>
+                  <a href="javascript:;" class="text-white d-flex align-items-center">開始使用<span class="material-symbols-outlined ms-3">north_east</span></a>
+                </div>
+              </div>
+            </li>
+            <li class="col">
+              <div class="card h-100 overflow-hidden price-style">
+                <div class="card-body">
+                  <h3 class="card-title fw-bold mb-3 text-white">名稱</h5>
+                    <ul class="text-black-20">
+                      <li>說明</li>
+                    </ul>
+                </div>
+                <div class="card-footer d-flex justify-content-between py-5 px-8">
+                  <p class="mb-0"><span class="h6">NT$5</span>／ <span class="h6 text-black-60">1k tokens</span></p>
+                  <a href="javascript:;" class="text-white d-flex align-items-center">開始使用<span class="material-symbols-outlined ms-3">north_east</span></a>
+                </div>
+              </div>
             </li>
           </ul>
-        </section>
+
+
+
+
+
       </div>
+      <section class="py-6">
+        <h4 class="mb-6 text-center text-dark">Dropdown btn </h4>
+        <!-- Example single danger button -->
+        <div class="d-flex justify-content-between">
+          <div class="btn-group filter-btn-group" id="filter">
+            <button type="button" class="dropdown-toggle btn bg-black-20 text-black-100 py-5 px-9 text-start"
+              data-bs-toggle="dropdown" aria-expanded="false" data-value="篩選" style="min-width: 132px;">篩選
+            </button>
+            <ul class="dropdown-menu" style="min-width: 240px;">
+              <li><a class="dropdown-item text-sm fw-semibold text-black-60 dropdown-title disabled" href="#">AI
+                  模型</a></li>
+              <li><a class="dropdown-item" href="javascript:;" data-type="all">所有模型</a></li>
+              <li><a class="dropdown-item" href="javascript:;" data-type="卡卡">卡卡</a></li>
+              <li><a class="dropdown-item active" href="javascript:;" data-type="杰杰">杰杰</a></li>
+              <li><a class="dropdown-item" href="javascript:;" data-type="琪琪">琪琪</a></li>
+              <li><a class="dropdown-item" href="javascript:;" data-type="昊昊">昊昊</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item text-sm fw-semibold text-black-60 dropdown-title disabled"
+                  href="javascript:;">類型</a>
+              </li>
+              <li><a class="dropdown-item" href="javascript:;">所有類型</a></li>
+              <li><a class="dropdown-item" href="javascript:;">篩選項目 1</a></li>
+              <li><a class="dropdown-item" href="javascript:;">篩選項目 2</a></li>
+              <li><a class="dropdown-item" href="javascript:;">篩選項目 3</a></li>
+              <li><a class="dropdown-item" href="javascript:;">篩選項目 4</a></li>
+              <li><a class="dropdown-item" href="javascript:;">篩選項目 5</a></li>
+              <li><a class="dropdown-item" href="javascript:;">篩選項目 6</a></li>
+            </ul>
+          </div>
+
+          <div class="btn-group sort-btn-group" id="sort-latest">
+            <button type="button" class="dropdown-toggle btn bg-black-20 text-black-100 py-5 px-9"
+              data-bs-toggle="dropdown" aria-expanded="false" style="width: 164px;">由新到舊</button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="javascript:;">由新到舊</a></li>
+              <li><a class="dropdown-item" href="javascript:;">由舊到新</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+      <section class="py-6">
+        <h3 class="mb-5 text-center text-black-100">Pagination</h3>
+        <ul class="pagination justify-content-center">
+          <li class="page-item">
+            <a class="page-link page-link fw-semibold d-flex justify-content-center align-items-center p-0 rounded-4 outline-0"
+              href="#" aria-label="Previous">
+              <span class="material-symbols-outlined">navigate_before</span>
+            </a>
+          </li>
+          <li class="page-item"><a
+              class="page-link fw-semibold d-flex justify-content-center align-items-center p-0 rounded-4 outline-0"
+              href="#">1</a></li>
+          <li class="page-item"><a
+              class="page-link fw-semibold d-flex justify-content-center align-items-center p-0 rounded-4 outline-0"
+              href="#">2</a></li>
+          <li class="page-item"><a
+              class="page-link fw-semibold d-flex justify-content-center align-items-center p-0 rounded-4 outline-0"
+              href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link page-link fw-semibold d-flex justify-content-center align-items-center p-0 rounded-4 outline-0"
+              href="#" aria-label="Next">
+              <span class="material-symbols-outlined">navigate_next</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
     </div>
     <div class="container">
       <section class="py-6">
@@ -259,13 +316,19 @@
         <div class="accordion mb-4" id="accordionExample">
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed fw-semibold ps-12 ps-lg-14" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              <button class="accordion-button collapsed fw-semibold ps-12 ps-lg-14" type="button"
+                data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
+                aria-controls="collapseOne">
                 Accordion Item #1
               </button>
             </h2>
             <div id="collapseOne" class="collapse" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              <div class="accordion-body ps-14">
+                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                within the <code>.accordion-body</code>, though the transition does limit overflow.
               </div>
             </div>
           </div>
@@ -274,13 +337,18 @@
         <div class="accordion mb-4" id="accordion-2">
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed fw-semibold ps-12 ps-lg-14" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+              <button class="accordion-button collapsed fw-semibold ps-12 ps-lg-14" type="button"
+                data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
                 Accordion Item #2
               </button>
             </h2>
             <div id="collapse-2" class="collapse" data-bs-parent="#accordion-2">
-              <div class="accordion-body">
-                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              <div class="accordion-body ps-14">
+                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                within the <code>.accordion-body</code>, though the transition does limit overflow.
               </div>
             </div>
           </div>

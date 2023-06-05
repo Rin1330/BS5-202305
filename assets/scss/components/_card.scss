@@ -3,10 +3,38 @@
   .card-img-top {
     transition: all .25s ease 0s;
   }
+  .card-footer {
+    transition: all .25s ease 0s;
+    a:hover {
+      color: var(--bs-primary)!important;
+    }
+    .material-symbols-outlined {
+      display: inline-block;
+      font-size: 1rem;
+    }
+  }
   &:hover {
     box-shadow: 0px 0px 15px 1px rgba(118, 116, 116, 0.7);
     .card-img-top {
       transform: scale(1.05);
+    }
+  }
+  &.price-style {
+    min-height: 240px;
+    background: transparent;
+    border: 1px solid $black-80;
+    @include media-breakpoint-up(lg) {
+      min-height: 318px;
+    }
+    .card-body {
+      border-bottom: 1px solid $black-80;
+    }
+    .card-footer {
+      background: transparent;
+    }
+    &:hover {
+      border: 1px solid #ffffff;
+      box-shadow: inherit;
     }
   }
 }
