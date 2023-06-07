@@ -30,6 +30,25 @@ section {
     transition: all .25s ease 0s;
     @include h3toh6
   }
+  .img-fluid {
+    width: 160px;
+  }
+  .card {
+    background: rgba(255, 255, 255, 0.08);
+    &:hover {
+      box-shadow: none;
+    }
+    .card-content {
+      min-height: auto;
+      @include media-breakpoint-up(lg) {
+        min-height: 215px;
+      }
+    }
+    .star {
+      font-size: 1rem;
+      display: block;
+    }
+  }
 }
 // ai-tool
 .ai-tools {

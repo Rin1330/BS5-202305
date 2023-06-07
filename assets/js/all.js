@@ -61,15 +61,30 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   } 
 
-  // if (document.querySelector('#partnership-1')) {
-  //   const swiper = new Swiper('#partnership-1', {
-  //     direction: 'horizontal',
-  //     loop: true,
-  //     speed: 300,
-  //     spaceBetween: 30,
-  //     mousewheel: true,
-  //   })
-  // }
+  if(document.querySelector('#partnership-3')) {
+    const swiper = new Swiper('#partnership-3.swiper', {
+      slidesPerView: 1,
+      spaceBetween: 24,
+      loop: true,
+      breakpoints: {
+        // when window width is >= 320pxs
+        767: {
+          slidesPerView: 2,
+          spaceBetween: 24
+        },
+        // when window width is >= 480px
+        992: {
+          slidesPerView: 3,
+          spaceBetween: 24
+        }
+      },
+      pagination: {
+        el: "#partnership-3 .swiper-pagination",
+        clickable: true,
+      },
+    })
+    console.log('fn')
+  }
 
 
 });
