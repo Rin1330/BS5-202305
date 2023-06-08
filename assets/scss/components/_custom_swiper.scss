@@ -1,9 +1,24 @@
 .swiper {
+  margin: 0 auto;
   .swiper-slide {
     height: auto;
   }
 }
 
-.swiper-pagination {
-  
+.swiper-pagination.swiper-pagination-bullets {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+}
+
+.swiper-pagination-bullet {
+  background-color: #525252;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  width: 12px;
+  height: 12PX;
+  background-color: #FFFFFF;
 }

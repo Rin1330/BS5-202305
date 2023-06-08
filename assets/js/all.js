@@ -61,9 +61,36 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   } 
 
+  if(document.querySelector('#partnership-1')) {
+    const swiper1 = new Swiper('#partnership-1.swiper', {
+      slidesPerView: "auto",
+      spaceBetween: 20,
+      loop: true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      slidesPerGroup: 1,
+    })
+  }
+
+  if(document.querySelector('#partnership-2')) {
+    const swiper2 = new Swiper('#partnership-2.swiper', {
+      slidesPerView: "auto",
+      spaceBetween: 20,
+      loop: true,
+      autoplay: {
+        delay: 1500,
+        disableOnInteraction: false,
+      },
+      slidesPerGroup: 1,
+    })
+  }
+
   if(document.querySelector('#partnership-3')) {
-    const swiper = new Swiper('#partnership-3.swiper', {
+    const swiper3 = new Swiper('#partnership-3.swiper', {
       slidesPerView: 1,
+      slidesPerGroup: 1,
       spaceBetween: 24,
       loop: true,
       breakpoints: {
@@ -79,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       },
       pagination: {
-        el: "#partnership-3 .swiper-pagination",
+        el: ".partnership-3-pagination",
         clickable: true,
       },
     })
